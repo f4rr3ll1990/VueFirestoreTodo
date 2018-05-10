@@ -1,0 +1,13 @@
+{
+  "name": "vue-firebase-demo",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "index.js",
+  "dependencies": {
+    "vue-firestore": "0.2.3",
+    "vue": "2.5.2",
+    "@firebase/firestore": "0.3.2",
+    "@firebase/app": "0.1.8"
+  }
+}
