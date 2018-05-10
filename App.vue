@@ -1,13 +1,13 @@
 <template>
 	<div id="app">
 		<div>
-			<input type="text" v-model="newReptile" @keyup.enter="addReptile">
-			<button  @click="addReptile">Add</button>
+			<input type="text" v-model="newTodo" @keyup.enter="addTodo">
+			<button  @click="addTodo">Add</button>
 		</div>
-		<ul class="reptileList">
-			<li v-for="reptile in reptiles" >
-				{{ reptile.name }} -
-				<button @click="deleteReptile(reptile)">Remove</button>
+		<ul class="todoList">
+			<li v-for="todo in todos" >
+				{{ todo.name }} -
+				<button @click="deleteTodo(todo)">Remove</button>
 			</li>
 		</ul>
 	</div>
@@ -54,7 +54,7 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-.reptileList {
+.todoList {
   list-style: none;
 }
 </style>
